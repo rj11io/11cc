@@ -9,9 +9,18 @@ import { cn } from "@/lib/utils"
 const inter = Inter({ subsets: ["latin"], variable: "--font-sans" })
 
 export const metadata: Metadata = {
-  title: "Under Maintenance",
+  metadataBase: new URL("https://cc.rj11.io"),
+  title: "RJ · AI Coaching, Consulting & Advisory",
   description:
-    "This website is currently under maintenance and will be back online soon.",
+    "From non-technical to AI power user. Coaching for individuals, consulting for teams. Keep up with the AI frontier without the overwhelm.",
+  openGraph: {
+    title: "RJ · AI Coaching, Consulting & Advisory",
+    description:
+      "Coaching for individuals: from non-technical to AI power user. Consulting for companies: bring your team up to speed without disruption.",
+    url: "https://cc.rj11.io",
+    siteName: "cc.rj11.io",
+    type: "website",
+  },
 }
 
 const fontMono = Geist_Mono({
@@ -27,9 +36,10 @@ export default function RootLayout({
   return (
     <html
       lang="en"
+      data-scroll-behavior="smooth"
       suppressHydrationWarning
       className={cn(
-        "antialiased",
+        "scroll-smooth antialiased motion-reduce:scroll-auto",
         fontMono.variable,
         "font-sans",
         inter.variable
