@@ -9,6 +9,7 @@ import {
   CardTitle,
 } from "@/components/ui/card"
 import { Separator } from "@/components/ui/separator"
+import { ThemeToggle } from "@/components/theme-toggle"
 
 const EMAIL = "ricardojorgexyz@gmail.com"
 
@@ -103,6 +104,7 @@ export default function Page() {
               <Mail data-icon="inline-start" />
               Get in touch
             </Button>
+            <ThemeToggle />
           </nav>
         </div>
       </header>
@@ -116,7 +118,8 @@ export default function Page() {
           <p className="mt-6 max-w-2xl text-lg leading-8 text-muted-foreground">
             The AI frontier moves weekly and most advice is noise. I&apos;m RJ:
             I build with these tools every day, and I teach people and teams to
-            use them properly. Calm, practical, at your pace.
+            use them properly. Calm, practical, at your pace. No jargon, no
+            judgment.
           </p>
           <div className="mt-10 flex flex-wrap items-center gap-4">
             <Button
